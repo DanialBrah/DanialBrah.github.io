@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website Landing Page</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./font/iconfont/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/9e149c5dd4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- we use position fixed for this navbar so that this navbar can remained at the top of our screen
+  even though we scroll down the screen, each of the option we use <a> element so that it can be 
+  directed to another website-->
+  <div class="navbar">
+    <div class="logo">
+      <!-- The website will bring the user to the official website after click the logo -->
+      <a href="#">
+        <img src="./images/logoo.png" alt="">
+        <!-- only the logo can use <h1> element and this type of coding can improve the Search
+          Engine Optimization (SEO) -->
+        <h1>THE WEBSTER</h1>
+      </a>
+    </div>
+    <div class="right">
+      <ul>  
+        <!-- each option is wrapped by <a> element so it can bring us to their respective website -->
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <form action="">
+        <!-- we use <form> to wrap the input and button together so that these two elements can
+          work together and help user to find the elements related to the keyword -->
+        <div class="form">
+          <input type="text" placeholder="Search any keyword">
+          <button type="submit">
+            <i class="iconfont icon-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="header">
+      <!-- we use background-clip: text; color; transparent; and bgi: url(...); together to make
+      the color of our text is beautiful and gradient -->
+      <h2>Welcome to My Personal Website!</h2>
+      <a href="#" class="picture"></a>
+      <div class="text">
+        My name is Mohd Danial Hakim Bin Zahari
+        <br>
+        <span>About me</span>
+        <p>UTM Software Engineering Year 2 Student</p>
+        <em>
+          Aspiring software engineer with a passion for problem-solving and a flair for innovation. Eager to make a mark in the ever-evolving field of technology by creating impactful software solutions.
+        </em>
+      </div>
+      <!-- these stars show our creativity and each star was assigned different animation css property -->
+      <div class="star">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+        <img src="./images/gold-star-glitter-on-transparent-background-free-png.webp" alt="">
+      </div>
+    </header>
+
+    <nav class="left-menu">
+        <div class="top">
+          <!-- We use position: sticky; to ensure the elements in the class "top" can still exist
+          in our screen even though we already scroll down the screen. This can increase the user
+          experience because they can directly select the <a> even though they already scroll down
+          the screen-->
+          <h1><i class="fa-solid fa-bars">&nbsp&nbsp</i>Menu</h1>
+          <ul class="nav-links">
+              <li><a href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+              <li><a href="#"><i class="fa-brands fa-blogger-b"></i>Blog</a></li>
+              <li><a href="#"><i class="fa-solid fa-book-open"></i>Resources</a></li>
+              <li><a href="#"><i class="fa-solid fa-file"></i>Resume/CV</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-question"></i>Help</a></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <!-- we use position: absolute; at here to ensure the bottom part will only show when
+          the user scroll until the most bottom part -->
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <nav class="right-menu">
+        <ul class="nav-links">
+          <!-- We use position: sticky; to ensure the elements in the class "top" can still exist
+          in our screen even though we already scroll down the screen. This can increase the user
+          experience because they can directly select the <a> even though they already scroll down
+          the screen-->
+            <li><a href="#biographyy"><i class="fa-solid fa-address-card"></i>Biography</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i>Skills</a></li>
+            <li><a href="#achievement"><i class="fa-solid fa-trophy"></i>Achievement</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+    <!-- This part is the biography, which show our personal information -->
+      <div class="biography" id="biographyy">
+        <div class="left">
+          <img src="./images/photo_2024-04-29_21-10-39.jpg" alt="">
+        </div>
+        <div class="right">
+          <h2 id="biography">Biography</h2>
+          <p>
+            Hello my name is Mohd Danial Hakim, a recent graduate from <a href="https://www.utm.my/">University of Technology Malaysia</a> with a degree in Software Engineering. I am a passionate and hardworking individual who is always looking for new challenges and opportunities to grow and develop. That's why i explore a lot of stuff and join many events including hackathon that i recently won. I am looking forward to land a career in a start up, that can help me gain more experience in the computing world. These are my contact information and don't forget to connect with me to create more opportunities together.
+          </p>
+          <div class="bio">
+            <div class="bio-list">
+              <div class="bio-title">Birthday</div>
+              <div class="bio-desc">1st December 2003</div>
+            </div>
+            <div class="bio-list">
+              <div class="bio-title">Age</div>
+              <div class="bio-desc">21</div>
+            </div>
+            <div class="bio-list">
+              <div class="bio-title">Email</div>
+              <div class="bio-desc">danialx003@gmail.com</div>
+            </div>
+            <div class="bio-list">
+              <div class="bio-title">Phone</div>
+              <div class="bio-desc">013-2942460</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    <!-- This part is the skill, which show the programming languages we learnt and percentage of
+    proficiency in each programming language, we also use the animation property at this part to
+    make sure our website is more creative and comfortable -->
+      <div class="skill" id="skills">
+        <div class="left">
+          <h2 id="skill">My Skills</h2>
+          <p>
+            I am proficient in <a href="">C++</a>, <a href="">HTML</a>, <a href="">CSS</a>, <a href="">Javascript</a>, 
+            <a href="">PHP</a> and so on, which equip me to handle complex technical challenges. I am a highly skilled software engineering student with a proven ability to excel in the field. Alongside my proficiency in various programming languages, development methodologies, and tools, I possess excellent communication and collaboration skills. I have a keen eye for detail and a passion for learning, which enables me to adapt quickly to new technologies and solve complex problems. My strong work ethic and commitment to innovation drive me to continuously improve and deliver high-quality software solutions. I am eager to leverage these skills to contribute meaningfully to the software engineering sector
+          </p>
+        </div>
+
+        <div class="right">
+          <div class="skills">
+            <h2>HTML</h2>
+            <div class="progress-bar">
+              <div class="html"><span>56</span></div>
+            </div>
+            <h2>CSS</h2>
+            <div class="progress-bar">
+              <div class="css"><span>50</span></div>
+            </div>
+            <h2>Javascript</h2>
+            <div class="progress-bar">
+              <div class="javascript"><span>15</span></div>
+            </div>
+            <h2>PHP</h2>
+            <div class="progress-bar">
+              <div class="php"><span>0</span></div>
+            </div>
+            <h2>C++</h2>
+            <div class="progress-bar">
+              <div class="java"><span>75</span></div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- This part is the education, which show our pre-u we studied before and current university
+      and the CGPA we achieved-->
+      <div class="achievement" id="achievementt">
+        <h2 id="achievement">My Achievements</h2>
+
+        <div class="school">
+          <a href="#" class="pre-u">
+            <img src="./images/download.png" alt="">
+            <h2>Foundation in Engineering</h2>
+            <p>Kolej Mara Kuala Nerang,</p>
+            <p>Malaysia.</p>
+            <p>2021-2022</p>
+            <p class="cgpa">CGPA: 4.0/4.0</p>
+          </a>
+
+          <a href="#" class="university">
+            <img src="./uploads/utm logo.png" alt="">
+            <h2>BSc in Software Engineering</h2>
+            <p class="name">University of Technology,</p>
+            <p>Malaysia.</p>
+            <p>2023-present</p>
+            <p class="cgpa">CGPA: 4.0/4.0</p>
+          </a>
+        </div>
+        
+      </div>    
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+            <h3>Contact</h3>
+            <a href="#">mohddanialhakim@graduate.utm.my</a>
+        </div>
+        <div class="social">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+      </div>
+    <div class="legal">
+        <p>
+          Copyright &copy; 2024 Mohd Danial Hakim.
+          <br>
+          All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </p>
+    </div>
+    </footer>
+  </div>
+</body>
+</html>
