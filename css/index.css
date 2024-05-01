@@ -259,7 +259,7 @@ body .container header.header h2 {
 }
 @keyframes moveUp {
   to {
-    transform: scale(50%, 50%);
+    transform: scale(115%, 115%);
   }
 }
 body .container header.header .picture {
@@ -545,27 +545,26 @@ body .container main.content {
 body .container main.content .biography {
   display: flex;
   justify-content: center;
-  padding: 0 3.75rem;
+  padding: 0 0.75rem;
   background-color: #fff;
   background-clip: text;
   color: transparent;
-  flex-wrap: wrap;
+  flex-direction: column;
   /* we use @media here to ensure that the picture will move up and the text will move to down 
         when the width of the screen is too small so that the content in our biography will not crush */
 }
 @media (max-width: 140rem) {
   body .container main.content .biography {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 body .container main.content .biography .left {
   padding: 1.5rem;
   padding-left:0px;
-  float: left;
 }
 body .container main.content .biography .left img {
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   object-fit: cover;
   border: transparent solid 0.15rem;
   border-radius: 50%;
@@ -738,12 +737,12 @@ body .container main.content .skill .right .progress-bar .java span {
 }
 @keyframes javascript {
   100% {
-    width: 15%;
+    width: 45%;
   }
 }
 @keyframes php {
   100% {
-    width: 0%;
+    width: 60%;
   }
 }
 @keyframes java {
@@ -815,6 +814,7 @@ body .container main.content .achievement .school .university p.cgpa {
   font-size: 1.1rem;
   margin: 2.8rem 0 0.8rem;
   transition: all 0.8s;
+  text-align: center;
 }
 body .container main.content .achievement .school .pre-u:hover,
 body .container main.content .achievement .school .university:hover {
@@ -829,10 +829,10 @@ body .container main.content .achievement .school .university:hover img {
 }
 body .container main.content .achievement .school .pre-u:hover .cgpa,
 body .container main.content .achievement .school .university:hover .cgpa {
-  color: #002684;
-  font-weight: 700;
-  transform-origin: left center;
-  transform: scale(1.2);
+  color: #d4e1b8;
+  font-weight: 500;
+  transform-origin: top center;
+  transform: scale(1.4);
 }
 body .container footer.footer {
   grid-area: 3/1/-1/-1;
