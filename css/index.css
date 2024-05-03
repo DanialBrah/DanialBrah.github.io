@@ -86,7 +86,7 @@ body {
 }
 body .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   left: 0;
@@ -252,7 +252,7 @@ body .container header.header h2 {
   grid-area: 1/1/2/2;
   align-content: end;
   font-size: 2.7rem;
-  background: url(../images/360_F_247228043_eNXkq3rHjZiBsfQXFTHKMjBh9W0Vo4cI.jpg) center / contain;
+  background: url(../images/download.jpeg) center / contain;
   background-clip: text;
   color: transparent;
   animation: moveUp 2s infinite alternate forwards;
@@ -415,7 +415,7 @@ body .container header.header .star img:nth-child(10) {
 body .container nav.left-menu {
   grid-area: 1/1/-1/2;
   position: relative;
-  background-color: #28bab7;
+  background-color: #0c243c;
   padding: 1rem 0.5rem;
   color: white;
 }
